@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">Welcome to <b>javascript</b>!...</div>
+    <br><br>
+    <button onclick="showInnerText()">Click for Innertext</button>
+    <br><br>
+    <button onclick="showInnerHtml()">Click for InnerHtml</button>
+    <br><br>
+    <div id="data"></div>
+    <script>
+        function showInnerText(){
+            let content=document.getElementById("demo").innerText;
+            document.getElementById("data").innerText=content;
+        }
+        function showInnerHtml(){
+            let content=document.getElementById("demo").innerHTML;
+            document.getElementById("data").innerHTML=content;
+        }
+
+    </script>
+</body>
+</html>
