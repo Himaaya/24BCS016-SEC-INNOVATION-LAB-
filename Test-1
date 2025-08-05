@@ -1,0 +1,55 @@
+<body>
+  <section class="hero section">
+    <h1>We Design and Build Creative Brands</h1>
+    <p>We craft unique, impactful brands that stand out and inspire. From concept to creation, we bring your brand vision to life with style and strategy.</p>
+    <button>Learn More</button>
+  </section>
+
+  <section class="services section">
+    <div class="card red">Red</div>
+    <div class="card">Service 1</div>
+    <div class="card">Service 2</div>
+    <div class="card">Service 3</div>
+    <div class="card">Service 4</div>
+  </section>
+
+  
+  <section class="about section">
+    <div class="text">
+      <h2>About Us</h2>
+      <p>Content goes here describing your business, values, and story.</p>
+    </div>
+    <div class="image">Picture</div>
+  </section>
+
+  
+  <section class="facts-row">
+  <div class="fact"><strong>75</strong><br>Successful Projects</div>
+  <div class="fact"><strong>24</strong><br>Employees</div>
+  <div class="fact"><strong>16</strong><br>Years</div>
+  <div class="fact"><strong>3</strong><br>Locations</div>
+</section>
+
+  <h1>OUR TEAM</h1>
+  <section class="team section">
+    <div class="card">Card w/ Picture</div>
+    <div class="card">Content</div>
+    <div class="card">Content</div>
+    <div class="card">Content</div>
+    <div class="card">Color Red</div>
+  </section>
+
+  <h1>CLIENTS</h1>
+  <section class="clients section">
+    <div class="card">Client 1</div>
+    <div class="card">Client 2</div>
+    <div class="card">Client 3</div>
+    
+  </section>
+  <section class="clients section">
+    <div class="card">Client 1</div>
+    <div class="card">Client 2</div>
+    <div class="card">Client 3</div>
+    </section>
+</body>
+</html>
