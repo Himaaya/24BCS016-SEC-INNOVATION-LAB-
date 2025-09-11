@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY_11</title>
+</head>
+<body>
+    <script>
+        //local storage->stores date permanently(until cleared by user or code)
+        //localStorage.setItem("key","value");
+        //localStorage.getItem("key");
+        localStorage.setItem("username","Himaaya");
+        console.log(localStorage.getItem("username"));
+        localStorage.removeItem("username")
+        localStorage.clear()
+        //storing array
+        //local storage only stores string not array
+        //Converts a JavaScript object or value into a JSON string(JSON.stringify()).
+        //Converts a JSON string back into a JavaScript object or value(JSON.parse()).
+        let programming=["preetha","rani"];
+        localStorage.setItem("programming",JSON.stringify(programming))
+        let stordedLang=JSON.parse(localStorage.getItem("programming"));
+        console.log(stordedLang)
+        //storing an array of objects in local storage
+        //let person={
+            //"name":"HIMAAYA",
+            //"job":"developer"
+        //}
+        //console.log(person.name)
+        //console.log(person["job"])
+        let person={
+            "name":"HIMAAYA",
+            "job":"developer"
+        }
+        localStorage.setItem("person",JSON.stringify(person));
+        let arrobj=JSON.parse(localStorage.getItem("person"))
+        console.log(arrobj)
+        
+    </script>
+</body>
+</html>
