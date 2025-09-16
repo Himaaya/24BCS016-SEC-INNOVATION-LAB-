@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //quantifiers specify how many times a character or group should appear
+        let text="abcad";
+        let pattern=/\a?/g;
+        let result=text.match(pattern);
+        console.log(result);
+        // modifiers(flags)change how regex matches.
+        let text1="Hai hello how are you?\n Hai I'm fine.Hai";
+        let pattern1=/^hai/ig;
+        let result1=text1.match(pattern1);
+        console.log(result1);
+        /*Meta characters have special meaning in regex.
+        common Meta characters:
+        .->any character except newline
+        \d->digit(0-9)
+        \w->word character (letters,digits,_)
+        \s->whitespace
+        ^->start of string
+        */
+       let number="37190spmn"
+       let pattern2=/\d+\w+/g;
+       let result2=number.match(pattern2);
+       console.log(result2);
+       /* methods:
+       test()->quick:does the string contain the pattern?
+       exec()->gives detailed info about the first match(and captured groups)
+       match()->
+       */
+      let text3="hai kavikuyil";
+      let pattern3=/(\w+)\s+(\w)/;
+      let result3=text3.match(pattern3);
+      console.log(result3);
+      console.log(result3[0]);
+      console.log(result3[1]);
+      console.log(result3[2]);
+
+
+    </script>
+</body>
+</html>
