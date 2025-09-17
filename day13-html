@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <script>
+        //try{
+            //code that may throw an error
+        //}catch(error){
+            //code to handle the error
+        //}finally{
+            //code that will always executes
+        //}
+    </script>
+    
+    <script>
+        //example
+        try{
+            let atmpin=1234;
+            if(atmpin > 0){
+                throw "you entered wrong pin.."
+            }
+            console.log("you entered correct pin")
+        }
+        catch(error){
+            console.log(""+error)
+
+        }finally{
+            console.log("execution finished...")
+        }
+        //definition
+        //JSON.parse()=>converts a JSON string into a javascript object.
+        //JSON.stringify()=>converts a Javascript object into a JSON object.
+        let jsonstring = `{"name":"java"}`;
+        let storedstring = JSON.parse(jsonstring);
+        console.log(storedstring);
+
+        let obj = { name: "js" };
+        let stredstring = JSON.stringify(obj);
+        console.log(stredstring);
+    </script>
+    <script>
+        fetch("data.json")
+        .then(res=>res.json())
+        .then(data=>{
+            for(let students)
+        })
+    </script>
+</body>
+</html>
+//json
+      {
+    "student":[
+        {"name":"kavya","id":1},
+        {"name":"maaya","id":2}
+    ]
+}
