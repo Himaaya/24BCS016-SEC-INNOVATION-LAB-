@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // A set is a collection of unquie values.It automatically removes duplicates.
+
+        let email=new set([]);
+        email.add("js@gamail.com");
+        email.add("java@gmail.com");
+        email.add("python@gmail.com");
+        console.log(email)
+       // email.delete("python@gmail.com");
+       //console.log(email)
+        //email.clear()
+        //console.log(email)
+
+        for(let mailId of email){
+            console.log(mailId)
+        }
+        email.forEach(x=>{
+            console.log(x)
+        })
+        let admin=new set(["write","read","delete"]);
+        let user=new set(["read"]);
+
+        function haspermission(role,granted){
+            return role.has(granted)
+        }
+        console.log(haspermission(admin,"delete"));
+        console.log(haspermission(user,"delete"));
+
+
+        let setA=new set([1,2,3,4,5]);
+        let setB=new set([6,7,8,9,10,1]);
+        let union=new set([...setA,...setB])
+        console.log(union)
+        let intersection=new Set([...setA].filter(x=>setB.has(x)));
+        console.log(intersection)
+        let diff=new Set([...setA].filter(x=>1!setB.has(x)));
+        console.log(diff)
+
+    </script>
+
+<script>
+    let user1={name:"java"};
+    let user2={name:"python"};
+    mymap.set(user1,"welcome");
+    mymap.set(user2,"welcome python!");
+    console.log(mymap);
+
+   // for(let map of mymap){
+  //console.log(map)
+  //}
+</script>
+
+
+
+</body>
+</html>
