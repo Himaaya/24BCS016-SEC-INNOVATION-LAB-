@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-Slider</title>
+    <style>
+        .slider {
+            width: 600px;
+            margin: 50px auto; 
+            text-align: center;
+        }
+        .slider{
+            margin: auto;
+        }
+        .slider img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img src="./image1.webp" alt="" id="display-images">
+
+        <button id="prev">previous</button>
+        <button id="next">next</button>
+    </div>
+    <script>
+       let image=[ "image1.webp", "image2.jpg","image3.jfif"];
+       let currentIndex=0;
+       let display=document.getElementById("display-images");
+       let prevBtn=document.getElementById("prev");
+       let nextBtn=document.getElementById("next");
+       nextBtn.addEventListener("click",()=>{
+        currentIndex=(currentIndex+1) % image.length;
+        display.src=image[currentIndex];
+       })
+       prevBtn.addEventListener("click",()=>{
+        currentIndex=(currentIndex-1 + image.length) % image.length;
+        display.src=image[currentIndex];
+       })
+       setInterval(()=>{
+        currentIndex=(currentIndex+1) % image.length;
+        display.src=image[currentIndex];
+       },2000)
+    </script>
+</body>
+</html>
